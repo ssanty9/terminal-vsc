@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 export function activate(context: vscode.ExtensionContext) {
 	let disposable = vscode.commands.registerCommand('extension.openTerminalVsc', async () => {
 
-		const terminal = vscode.window.createTerminal(`GIT`);
+		const terminal = vscode.window.createTerminal(`TERMINAL`);
 		terminal.show(true);
 
 		terminal.sendText("g", true);
