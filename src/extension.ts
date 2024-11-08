@@ -6,9 +6,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const terminal = vscode.window.createTerminal(`TERMINAL`);
 		terminal.show(true);
 
-		terminal.sendText("g", true);
-
-		const closeListener = vscode.window.onDidCloseTerminal(closedTerminal => {
+		const closeListener = vscode.window.onDidCloseTerminal((closedTerminal: any) => {
 			if (closedTerminal === terminal) {
 				closeListener.dispose();
 			}
