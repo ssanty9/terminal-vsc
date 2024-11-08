@@ -2,6 +2,28 @@
 
 This is a default terminal which is going to be shown in a new tab in the vsc editor
 
+## Installation
+
+- After cloning this repository, from you need first to install node_modules:
+
+```bash
+npm install # Probably you'll need the admin permissions so try sudo npm install
+```
+
+- Then you can compile the externsion:
+
+```bash
+npm run compile 
+```
+
+- You can test the extension apply F5 on visual studio code to open a new debug session: 
+
+- Finally you can generate the .vsix file to install later in visual studio code with the next command from your terminal:
+
+```bash
+vsce package
+```
+
 ## Features
 
 It contains the next options:
@@ -20,7 +42,7 @@ Download the `.vsix` file and in Visual Studio Code, go to Extensions > Menu (th
 
 ## Requirements
 
-This extension needs [Lazygit](https://github.com/jesseduffield/lazygit) installed to work.
+No requirements needed.
 
 ## Publisher
 
